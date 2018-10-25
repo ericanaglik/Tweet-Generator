@@ -1,7 +1,7 @@
 import random
 from sys import argv
 i = 0
-uhh = int(argv[1])
+user_input = int(argv[1])
 def load_word():
     f = open('words.txt', 'r')
     words_list = f.readlines()
@@ -11,6 +11,6 @@ def load_word():
     secret_word = random.choice(split_words_list)
     return secret_word
 
-while i < uhh:
+while i < user_input:
     print(load_word())
     i += 1
