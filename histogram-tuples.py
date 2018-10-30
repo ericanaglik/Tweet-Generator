@@ -16,7 +16,9 @@ for word in match_pattern:
 
 zipped = zip(first_list, second_list)
 
-print(list(set(zipped)))
+please = list(set(zipped))
+
+print(dict(please))
 
 
 
