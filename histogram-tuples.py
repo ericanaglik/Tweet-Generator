@@ -1,5 +1,6 @@
 import re
 import string
+import sys
 
 def histogram(text):
     frequency = {}
@@ -24,5 +25,5 @@ def histogram(text):
     print(list(set(zipped)))
     print("Unique words: " + str(unique_count))
 
-
-histogram('test.txt')
+text = str(sys.argv[1])
+histogram(text)
