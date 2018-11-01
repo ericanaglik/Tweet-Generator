@@ -7,7 +7,7 @@ def histogram(text):
     second_list = []
     document_text = open(text, 'r')
     text_string = document_text.read().lower()
-    match_pattern = re.findall(r'\b[a-z]{3,15}\b', text_string)
+    match_pattern = re.findall(r'\b[a-z]{1,15}\b', text_string)
 
     for word in match_pattern:
         count = frequency.get(word,0)
