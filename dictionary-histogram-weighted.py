@@ -35,3 +35,10 @@ def file_open():
         text_string = document_text.read().lower()
         match_pattern = re.findall(r'\b[a-z]{1,15}\b', text_string)
     return match_pattern
+
+if __name__ == "__main__":
+    text = file_open()
+    run = histogram(text)
+    print(run)
+    print(random_word(run))
+    print(dictionary_test(run))
