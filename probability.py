@@ -8,7 +8,7 @@ frequency_percent = []
 for i in frequency:
     frequency_percent.append((i/denominator))
 
-print(random.choices(new_words,frequency_percent,k = 1))
+print(random.choices(new_words,frequency_percent,k = 8))
 
 def frequency_tester():
     i = 0
