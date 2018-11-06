@@ -20,3 +20,15 @@ def random_word(histogram_dictionary):
             return key
         else:
             continue
+def dictionary_test(histogram_dictionary):
+    test_dictionary = {}
+    for _ in range(0, 10000):
+        selected_word = random_word(histogram_dictionary)
+        if selected_word in test_dictionary:
+            test_dictionary[selected_word] += 1
+        else:
+            test_dictionary[selected_word] = 1
+    return test_dictionary
+
+def file_open():
+    
