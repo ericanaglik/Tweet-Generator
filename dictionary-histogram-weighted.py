@@ -31,4 +31,7 @@ def dictionary_test(histogram_dictionary):
     return test_dictionary
 
 def file_open():
-    
+    with open('test.txt', 'r') as text:
+        text_string = document_text.read().lower()
+        match_pattern = re.findall(r'\b[a-z]{1,15}\b', text_string)
+    return match_pattern
