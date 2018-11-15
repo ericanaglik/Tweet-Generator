@@ -37,7 +37,7 @@ def print_histogram(word_list):
     histogram = Dictogram(word_list)
     print('dictogram: {}'.format(histogram))
     print('{} tokens, {} types'.format(histogram.tokens, histogram.types))
-    for word in word_list[-2]:
+    for word in word_list:
         freq = histogram.frequency(word)
         print('{!r} occurs {} times'.format(word, freq))
     print()
